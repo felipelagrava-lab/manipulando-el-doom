@@ -1,0 +1,32 @@
+:root {
+  --azul: #0d3b8e;
+  --azul-claro: #e8f0fe;
+  --naranja: #ff7a00;
+}
+
+body { background: var(--azul-claro); font-family: "Segoe UI", sans-serif; color: #1b2a4a; }
+h1, h2, h3, h4, h5 { color: var(--azul); }
+
+.barra { background: var(--azul); border-bottom: 4px solid var(--naranja); }
+.barra .nav-link.active, .barra .nav-link:hover { color: var(--naranja) !important; }
+
+.foto-perfil {
+  width: 220px; height: 220px; object-fit: cover;
+  border-radius: 50%; border: 5px solid var(--naranja);
+}
+
+.btn-azul { background: var(--azul); color: #fff; border: none; }
+.btn-azul:hover { background: #0a2d6e; color: #fff; }
+.btn-naranja { background: var(--naranja); color: #fff; border: none; }
+.btn-naranja:hover { background: #d96600; color: #fff; }
+
+.tarjeta { border: 3px solid var(--azul); border-radius: 12px; background: #fff; transition: 0.3s; }
+.etiqueta-naranja { background: var(--naranja); }
+.progress-bar { background: var(--naranja); }
+.encabezado th { background-color: var(--azul) !important; color: #fff; }
+.accordion-button:not(.collapsed) { background: var(--azul); color: #fff; }
+
+.resaltado { background: #fff3e0; border-left: 6px solid var(--naranja); padding: 12px; }
+.texto-grande { font-size: 1.3rem; }
+
+footer { background: var(--azul); color: #fff; border-top: 4px solid var(--naranja); }

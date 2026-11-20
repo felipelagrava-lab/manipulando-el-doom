@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe | FORMACION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark barra">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Felipe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link active" href="formacion.html">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="mb-4">Formación académica</h2>
+<div class="row">
+  <div class="col-md-6">
+    <div id="tarjetaUniv" class="card tarjeta p-3 mb-3">
+      <h5>Universidad del Valle (UNIVALLE)</h5>
+      <p class="mb-2">Ingeniería de Sistemas · En curso</p>
+      <button class="btn btn-azul btn-sm" onclick="mostrarDetalle()">Ver detalle</button>
+      <ul id="detalleCarrera" class="mt-3 d-none">
+        <li>Administración de sistemas</li>
+        <li>Electrónica y circuitos</li>
+        <li>Cálculo</li>
+        <li>Programación en C++</li>
+        <li>Redes</li>
+      </ul>
+    </div>
+    <label for="campoComentario" class="form-label">Comenta sobre mi formación:</label>
+    <input id="campoComentario" class="form-control" maxlength="60" placeholder="Escribe aquí...">
+    <p id="contador" class="small mt-1">Caracteres: 0</p>
+  </div>
+
+  <div class="col-md-6">
+    <div class="accordion" id="acordeon">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#uno">Bachillerato</button>
+        </h2>
+        <div id="uno" class="accordion-collapse collapse show" data-bs-parent="#acordeon">
+          <div class="accordion-body">Bachiller en Humanidades · Colegio JUAN ENRIQUE PESTALOZZI · 2022</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dos">Cursos complementarios</button>
+        </h2>
+        <div id="dos" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+          <div class="accordion-body">
+            <ol class="mb-0">
+              <li>Linux básico</li>
+              <li>Redes y comunicaciones</li>
+              <li>Programación competitiva</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="text-center py-3 mt-5">Felipe · Perfil profesional · 2026</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
